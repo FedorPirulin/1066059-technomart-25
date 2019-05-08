@@ -1,7 +1,8 @@
 # Личный проект «Техномарт»
 
 * Студент: [Федор Пирулин](https://up.htmlacademy.ru/htmlcss/25/user/1066059).
-* Наставник: `Неизвестно`.
+
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
