@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
                                   <!-- Шапка сайта-->
@@ -10,13 +11,18 @@
                                   <!-- Хедер Топ -->
       <div class="header-top">
         <a class="top-header-button main-header-logo" href="index.html">
-          <img src="http://placehold.it/150x50">
+          <img src="img/logo-technomart.svg" class="layer" alt="Ой...Тут лого сайта ТЕХНОМАРТ">
         </a>
-        <form>
-          <input class="searching" type="search" name="q" placeholder="Поиск:">
+        <form class="search">
+          <input class="input-search" type="search" name="q" placeholder="Поиск:">
         </form>
-        <a class="top-header-button marker" href="#"> Закладки</a>
-        <a class="top-header-button basket" href="#">Корзина</a>
+        <a class="top-header-button bookmark" href="#">
+          <img class="icon-bookmark" src="img/icon-bookmark.svg">
+          Закладки
+        </a>
+        <a class="top-header-button basket" href="#">
+          <img class="icon-bookmark" src="icon-bookmark.svg">
+          Корзина</a>
         <a class="top-header-button order-button" href="#">Оформить заказ</a>
       </div>
       <div class="header-bottom">
@@ -73,8 +79,15 @@
             <a class="promo-block-button" href="#">БЕСПЛАТНО</a>
           </div>
           <div class="special-services">
+            <img class="dreli" src="img/dreli.png">
             <h3>ДРЕЛИ</h3>
             <p>Соседям на радость!</p>
+            <a class="slide-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+          </div>
+          <div class="special-services">
+            <img class="perforatori" src="img/perforatori.png">
+            <h3>ПЕРФОРАТОРЫ</h3>
+            <p>Настоящие мужские игрушки</p>
             <a class="slide-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
           </div>
         </section>
@@ -88,7 +101,7 @@
           <li class="item">
               <h3 сlass="titel-item">Перфоратор BOSCH BFG 9000</h3>
               <p>
-                <img class="item-img" src="http://placehold.it/125x250" alt="Перфоратор BOSCH BFG 9000">
+                <img class="item-img" src="img/item-bfg9000.jpg" alt="Перфоратор BOSCH BFG 9000">
               </p>
               <b class="old-price">32500 Р.</b>
               <b class="new-price">25500 Р.</b>
@@ -100,7 +113,7 @@
           <li class="item">
               <h3 сlass="titel-item">Перфоратор BOSCH BFG 3000</h3>
               <p>
-                <img class="item-img" src="http://placehold.it/125x250" alt="Перфоратор BOSCH BFG 3000">
+                <img class="item-img" src="img/item-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000">
               </p>
               <b class="old-price">22500 Р.</b>
               <b class="new-price">15500 Р.</b>
@@ -112,7 +125,7 @@
           <li class="item">
               <h3 сlass="titel-item">Перфоратор BOSCH BFG 6000</h3>
               <p>
-                <img class="item-img" src="http://placehold.it/125x250" alt="Перфоратор BOSCH BFG 6000">
+                <img class="item-img" src="img/item-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000">
               </p>
               <b class="old-price">30500 Р.</b>
               <b class="new-price">25500 Р.</b>
@@ -124,7 +137,7 @@
           <li class="item">
             <h3 сlass="titel-item">Перфоратор BOSCH BFG 2000</h3>
             <p>
-                <img class="item-img" src="http://placehold.it/125x250" alt="Перфоратор BOSCH BFG 2000">
+                <img class="item-img" src="img/item-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000">
             </p>
             <b class="new-price">12500 Р.</b>
             <div>
@@ -143,42 +156,42 @@
         <ul>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img src="http://placehold.it/125x100">
+              <img class="brand-img" src="img/bosch.jpg" >
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img src="http://placehold.it/125x100">
+              <img class="brand-img" src="img/makita.jpg">
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img src="http://placehold.it/125x100">
+              <img class="brand-img" src="img/de-walt.jpg">
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img src="http://placehold.it/125x100">
+              <img class="brand-img" src="img/interskol.jpg">
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img src="http://placehold.it/125x100">
+              <img class="brand-img" src="img/hitachi.jpg">
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img src="http://placehold.it/125x100">
+              <img class="brand-img" src="img/lg.jpg">
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img  src="http://placehold.it/125x100">
+              <img class="brand-img"  src="img/aeg.jpg">
             </a>
           </li>
           <li class="brand-card">
             <a class="brand-card-button" href="#">
-              <img  src="http://placehold.it/125x100">
+              <img class="brand-img"  src="img/metabo.jpg">
             </a>
           </li>
         </ul>
@@ -200,11 +213,14 @@
             </li>
             <li class="services-description-block">
               <h4 class="services-description-titel">ГАРАНТИЯ</h4>
-              <p class="services-description-text">Гарантия бла бла</p>
+              <p class="services-description-text">Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                Дом уж восстановите как-нибудь сами.</p>
             </li>
             <li class="services-description-block">
               <h4 class="services-description-titel">КРЕДИТ</h4>
-              <p class="services-description-text">Кредит бла бла</p>
+              <p class="services-description-text">Залезть в долговую яму стало проще!<br> 
+                Кредитные консультанты придут вам на помощь.</p>
             </li>
           </ul>
       </section>
@@ -225,7 +241,7 @@
           <h3 class="contacts-titel">КОНТАКТЫ</h3>
           <p class="contacts-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
           <a class="map" href="#">
-            <img  src="http://placehold.it/125x100">
+            <img  src="img/map.png">
           </a>
           <a class="map-button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
@@ -234,9 +250,9 @@
     <!-- Подвал сайта -->
     <footer class="page-footer">
       <!-- Футер-топ -->
-      <div class="footer-top"
-        <a class="main-header-logo" href="index.html">
-          <img src="http://placehold.it/150x50">
+      <div class="footer-top">
+        <a class="main-footer-logo" href="index.html">
+          <img class="footer-logo" src="img/logo-technomart.svg" width="138" height="23" alt="Ой...Тут лого сайта ТЕХНОМАРТ">
         </a>
         <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7(812) 555-05-55<p>
           <ul class="bottom-navigation">
