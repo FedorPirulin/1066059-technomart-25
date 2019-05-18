@@ -62,10 +62,53 @@
       </ul>
 
       <h1 class="page-title">ПЕРФОРАТОРЫ</h1>
-
+<!-- Форма фильтра -->
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <h2 class="visually-hidden">ФИЛЬТР:</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>ЦЕНА:</legend>
+          </fieldset>
+          <fieldset>
+              <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch">
+                    <label for="filter-bosch">BOSCH</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                    <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita">
+                    <label for="filter-makita">MAKITA</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                    <label for="filter-dewalt">DEWALT</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                    <label for="filter-hitachi">HITACHI</label>
+                  </li>
+                </ul>
+          </fieldset>
+          <fieldset>
+              <legend>ПИТАНИЕ:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="battery" id="filter-battery">
+                  <label for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="network" id="filter-network">
+                  <label for="filter-network">СЕТЕВЫЕ</label>
+                </li>
+              </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button"> ПОКАЗАТЬ </button>
+        </form>
       </section>
 
       <section class="sorting">
@@ -240,5 +283,13 @@
       </p>
     </div>
   </footer>
+  <!-- Товар добавлен в корзину -->
+  <section class="modal modal-buy">
+    <h2 class="visually-hidden">Товар добавлен в корзину!</h2>
+    <form class="buy-form" action="https://echo.htmlacademy.ru" method="post">
+      <a class="buy-final-button button" href="#"> ОФОРМИТЬ ЗАКАЗ </a>
+      <button class="continue-button button"> ПРОДОЛЖИТЬ ПОКУПКИ</button>
+    </form>
+  </section>
 </body>
 </html>

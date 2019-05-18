@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <h1 class="visually-hidden">Техномарт</h1>
                                   <!-- Шапка сайта-->
     <header class="main-header">
                                   <!-- Хедер Топ -->
       <div class="header-top">
         <a class="top-header-button main-header-logo" href="index.html">
-          <img src="img/logo-technomart.svg" class="layer" alt="Ой...Тут лого сайта ТЕХНОМАРТ">
+          <img src="img/logo-technomart.svg" class="layer" alt="Логотим магазина Техномарт">
         </a>
         <form class="search">
           <input class="input-search" type="search" name="q" placeholder="Поиск:">
@@ -35,8 +36,12 @@
         </div>
                                     <!-- Пользователь -->
             <ul class="user-block">
-              <li class="user-button user-login-link"><a href="#">Войти</a></li>
-              <li class="user-button user-registration"><a href="#">Регистрация</a></li>
+              <li>
+                <a class="user-button user-login-link" href="#">Войти</a>
+              </li>
+              <li>
+                <a class="user-button user-registration" href="#">Регистрация</a>
+              </li>
             </ul>
 
                                     <!-- Навигация -->
@@ -54,14 +59,13 @@
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">Техномарт</h1>
                                 <!-- Карточкики с услугами -->
       <section class="promo-block">
         <h2 class="visually-hidden">Услуги</h2>
           <div class="materials">
             <h3>Материалы</h3>
             <a class="promo-block-button" href="#">НА ЛЮБОЙ ВКУС</a>
-          </div>class="item-titele"
+          </div>
           <div class="instruments">
             <h3>Инструмент</h3>
             <a class="promo-block-button" href="#">НА ВСЕ СЛУЧАИ</a>
@@ -242,7 +246,7 @@
           <h3 class="contacts-titel">КОНТАКТЫ</h3>
           <p class="contacts-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
           <a class="map" href="#">
-            <img  src="img/map.png" alt="Карта уже почти загрузилась">
+            <img  src="img/map.jpg" width="300" height="158" alt="Офим компании по адресу ул. Большая Конюшенная 19/8, Сантк-Петербург">
           </a>
           <a class="map-button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
@@ -284,5 +288,35 @@
       </p>
   </div>
   </footer>
+  <!-- Карта -->
+  <section class="modal-map">
+    <h2 class="visually-hidden">Как добраться?</h2>
+    <p>
+      <img src="img/bigmap.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">
+    Закрыть
+    </button>
+    </section>
+  <!-- Всплывающее окно обратной связи -->
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Обратная свзять</h2>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="feedback-item">
+      <label for="feedback-name">Ваше имя:</label>
+      <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+    </p>
+    <p class="feedback-item">
+      <label for="feedback-email">Ваш e-mail:</label>
+      <input id="feedback-email" type="text" name="email" value="" placeholder="email@exapmle.com">
+    </p>
+    <p class="feedback-item">
+      <label for="feedback-text">Текст письма:</label>
+      <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
+    </p>
+    <button class="feedback-button" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
   </body>
 </html>
