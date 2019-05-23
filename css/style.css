@@ -16,24 +16,11 @@ a {
 }
 .header-top {
   background-color: #293449;
-  width: 1200px;
-  height: 42px;
-  margin: 0;
-  padding-left: 170px;
-  padding-right: 170px;
 }
 .header-top a {
-  list-style: none;
   color: #ffffff;
 }
 .main-header-logo {
-  width: 220px;
-  height: 47px;
-  padding-top: 13px;
-  padding-right: 56px;
-  padding-bottom: 15px;
-  padding-left: 55px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 .main-header-logo:hover {
@@ -42,30 +29,18 @@ a {
 .main-header-logo:active {
   background-color: #ba2732;
 }
-.search {
-  display: inline-block;
-}
 .input-search {
+  color: #ffffff;
   background-color: #293449;
   border: none;
 }
-input[type="search"].input-search::-webkit-input-placeholder {
-  color: #ffffff;
-}
 .top-header-button {
-  display: inline-block;
-  width: 150px;
-  padding-top: 14px;
   font-size: 17px;
   line-height: 18px;
   text-align: left;
 }
 .top-header-button:hover {
   background-color: #212a3a;
-}
-.marker {
-}
-.basket {
 }
 .top-header-button:hover {
 background-color: #161d29;
@@ -75,12 +50,7 @@ background-color: #161d29;
   background-color: #161d29;
 }
 .order-button {
-  padding-left: 20px;
-  padding-right: 22px;
-  padding-top: 14px;
-  padding-bottom: 13px;
   background-color: #63a63e;
-  margin: 0;
 }
 .order-button:hover {
   background-color: #5fbb2d;
@@ -90,112 +60,82 @@ background-color: #161d29;
   background-color: #518534;
 }
 .header-bottom {
-  width: 1200px;
-  height: 320px;
   background-color: #f4f7f9;
-  margin: 0;
 }
 .about {
-  display: inline-block;
-  width: 196px;
-  height: 60px;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
   font-family: 'Cuprum', sans-serif;
   font-style: italic;
-  margin-left: 223px;
-  margin-top: 47px;
-  margin-right: 71px;
   text-align: left;
-
-
-}
-.header-bootom-phone {
-  display: inline-block;
 }
 .phone {
-  width: 270px;
-  height: 45px;
-  text-align: center;
+  text-align: left;
   border: solid 3px #ffffff;
 }
 .header-bootom-phone a {
-  list-style: none;
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
   letter-spacing: 0,42px;
-  text-align: center;
+  text-align: left;
 }
 .address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  text-align: center;
-}
-.user-block {
-  display: inline-block;
+  text-align: left;
 }
 .user-block a {
-  list-style: none;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
-.user-login-link {
+.user-login-link,
+.user-registration,
+.user-current-accaunt {
   background-color: #ffffff;
-  width: 121px;
-  height: 45px;
-}
-.user-registration  {
-  background-color: #ffffff;
-  width: 150px;
-  height: 45px;
 }
 .user-login-link:hover,
 .user-registration:hover {
-  list-style: none;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
   background-color: #ffffff;
 }
 .user-login-link:active,
-.user-registration:active {
-  list-style: none;
+.user-registration:active,
+.user-current-accaunt:active {
   font-size: 21px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
   rgba(0, 0, 0, 0.3)
 }
+.user-tools a {
+  font-size: 16px;
+  color:#32425c;
+  text-decoration: underline;
+  text-align: left;
+}
+.small-user-button:hover {
+  color: #ee3643;
+}
+.small-user-button:active {
+  color: rgba(50, 66, 92, 0.3);
+}
 .site-navigation {
-  width: 940px;
-  height: 60px;
-
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-
+  text-align: left;
   background-color: #32425c;
-  margin-left: 170px;
-  margin-right: 170px;
-  margin-bottom: 60px;
-  box-shadow: inset 0px -5px 0 0 #293449;
-}
-.site-navigation a {
-  list-style: none;
-  color: #ffffff;
 }
 .site-navigation-button {
-  display: inline-block;
   font-family: 'Cuprum', sans-serif;
-  padding-top: 22px;
   color: #ffffff;
-  margin: 0;
-  width: 127px;
-  height: 60px;
+
 }
 .site-navigation-button a:hover {
   background-color: #293449;
@@ -208,6 +148,99 @@ background-color: #161d29;
   background-color: #f2f6f8;
   color: #000000;
   text-align: left;
+}
+.breadcrumbs {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.breadcrumbs a {
+  color: #000000;
+}
+.page-title {
+  color: #32425c;
+  background-color: #f2f6f8;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+.filter {
+  font-style: 'PT Sans', sans-serif;
+  color: #000000;
+}
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.filter ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  border: solid 1px #e5e5e5;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+.catalog-list {
+  list-style: none;
+}
+.item-titele {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.item {
+  background-color: #ffffff;
+}
+.old-price {
+  color: #999999;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: overline;
+}
+.new-price {
+  color: #ffffff;
+  background-color:
+}
+.button-buy {
+  font-family: 'Cuprum', sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #63a63e;
+  text-align: center;
+}
+.button-buy:hover {
+  background-color: #5fbb2d;
+}
+.button-buy:active {
+  background-color: #518534;
+}
+.button-order {
+  font-family: 'Cuprum', sans-serif;
+  color: #32425c;
+  text-align: center;
+  border: solid 3px #63a63e;
+  background-color: #ffffff;
+}
+.button-order:hover {
+  border: solid 3px #32425c;
+}
+.button-order:active {
+  opacity: 0.3;
 }
 .delivery-info-titele,
 .contacts-titele {
@@ -228,7 +261,7 @@ background-color: #161d29;
   color:#000000;
   font-size: 13px;
   line-height: 24px;
-  font-style: 'PT Sans', san-serif;
+  font-style: 'PT Sans', sans-serif;
 }
 .about-company,
 .map-button {
@@ -290,6 +323,7 @@ background-color: #161d29;
   text-decoration: none;
   color: #ee3643;
 }
+
 
 .visually-hidden {
   position: absolute;
