@@ -2,26 +2,43 @@ body {
   margin: 0;
   padding: 0;
 
-  width: 1200px;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
   font-weight: 400;
   color: #ffffff;
 
-  background-color: skyblue;
+  background-color: #ffffff;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.main-header {
+  margin-bottom: 59px;
 }
 a {
   text-decoration: none;
 }
 .header-top {
   background-color: #293449;
+  height: 42px;
+  display: flex;
+  width: 1200px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 .header-top a {
   color: #ffffff;
 }
 .main-header-logo {
   background-color: #ee3643;
+  width: 220px;
+  height: 47px;
+  display: block;
 }
 .main-header-logo:hover {
   background-color: #ca2c37;
@@ -30,11 +47,13 @@ a {
   background-color: #ba2732;
 }
 .input-search {
+  width: 270px;
   color: #ffffff;
   background-color: #293449;
   border: none;
 }
 .top-header-button {
+  width: 150px;
   font-size: 17px;
   line-height: 18px;
   text-align: left;
@@ -66,7 +85,7 @@ background-color: #161d29;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-style: italic;
   text-align: left;
 }
@@ -125,16 +144,27 @@ background-color: #161d29;
 .small-user-button:active {
   color: rgba(50, 66, 92, 0.3);
 }
+.main-navigation {
+  display: flex;
+}
 .site-navigation {
+  display: flex;
+  width: 940px;
+  height: 60px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
   text-align: left;
   background-color: #32425c;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.site-navigation-button {
-  font-family: 'Cuprum', sans-serif;
+.site-navigation-button a {
+  font-family: 'Cuprum', Arial, sans-serif;
   color: #ffffff;
+  width: auto;
+  height: 60px;
 
 }
 .site-navigation-button a:hover {
@@ -150,7 +180,7 @@ background-color: #161d29;
   text-align: left;
 }
 .breadcrumbs {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   text-align: left;
   font-size: 13px;
   line-height: 18px;
@@ -167,7 +197,7 @@ background-color: #161d29;
   text-align: left;
 }
 .filter {
-  font-style: 'PT Sans', sans-serif;
+  font-style: 'PT Sans', Arial, sans-serif;
   color: #000000;
 }
 .filter fieldset {
@@ -216,7 +246,7 @@ background-color: #161d29;
   background-color:
 }
 .button-buy {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -230,7 +260,7 @@ background-color: #161d29;
   background-color: #518534;
 }
 .button-order {
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Cuprum', Arial, sans-serif;
   color: #32425c;
   text-align: center;
   border: solid 3px #63a63e;
@@ -261,7 +291,7 @@ background-color: #161d29;
   color:#000000;
   font-size: 13px;
   line-height: 24px;
-  font-style: 'PT Sans', sans-serif;
+  font-style: 'PT Sans', Arial, sans-serif;
 }
 .about-company,
 .map-button {
@@ -276,6 +306,7 @@ background-color: #161d29;
   line-height: 24px;
 }
 .footer-top p {
+  text-decoration: none;
   text-align: left;
   color: #f1f5f7;
 }
@@ -323,12 +354,6 @@ background-color: #161d29;
   text-decoration: none;
   color: #ee3643;
 }
-
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.modal {
+  display: none;
 }
