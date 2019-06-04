@@ -55,6 +55,7 @@ a {
   background-color: #ba2732;
 }
 .input-search {
+  line-height: 18px;
   width: 270px;
   height: 42px;
   color: #ffffff;
@@ -271,6 +272,7 @@ background-color: #161d29;
   color: #ffffff;
   background-color: #32425c;
   list-style: none;
+  box-shadow: inset 0px -5px 0 0 #293449;
 }
 .site-navigation-button a {
   padding-left: 30px;
@@ -304,18 +306,40 @@ background-color: #161d29;
 }
 .breadcrumbs {
   margin: 0;
+  padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   text-align: left;
   font-size: 13px;
   line-height: 18px;
   height: 9px;
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   list-style: none;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.crumb, .current-crumb {
+.crumb {
+  color: #000000;
   margin-left: 40px;
+  position: relative;
+}
+.crumb::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -24px;
+  width: 8px;
+  height: 12px;
+  background-image: url("img/crumb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.crumb:last-child {
+  margin-right: 0;
+}
+.current-crumb::after {
+  display: none;
 }
 .breadcrumbs a,
 .current-crumb {
@@ -468,19 +492,24 @@ background-color: #161d29;
 }
 .delivery {
   display: flex;
-  height: 368px;
-  padding-top: 42px;
-  padding-bottom: 74px;
+  padding-top: 86px;
+  padding-bottom: 82px;
 }
 .delivery-info {
-  width: 520px;
   margin-right: 120px;
+  display: flex;
+  flex-direction: column;
 }
 .contacts {
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 .delivery-info-titele,
 .contacts-titele {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
   text-align: left;
   font-size: 30px;
   line-height: 30px;
@@ -488,19 +517,30 @@ background-color: #161d29;
 }
 .postal-services {
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   list-style: none;
   text-align: left;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
+.postal-services-item {
+  margin-top: 19px;
+}
+.delivery-middle-container p {
+  margin: 0;
+}
 .delivery-middle-container {
-  width: 586px;
+  width: 386px;
   height: 161px;
   margin-bottom: 40px;
 }
 .delivery-info-text,
 .contacts-text {
+  padding: 0;
+  margin: 0;
   text-align: left;
   color:#000000;
   font-size: 13px;
@@ -509,15 +549,21 @@ background-color: #161d29;
 }
 .about-company,
 .map-button {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
+  height: 12px;
   padding-top: 14px;
   padding-bottom: 12px;
 }
 .about-company {
-  padding-left: 41px;
+  width: 140px;
+  padding-left: 40px;
   padding-right: 40px;
 }
 .map-button {
