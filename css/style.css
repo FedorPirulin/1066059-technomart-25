@@ -795,7 +795,6 @@ background-color: #161d29;
   width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
-  padding: 7px 0;
 
   background-color: #63a63e;
   border: 3px solid #63a63e;
@@ -808,6 +807,13 @@ background-color: #161d29;
   color: #32425c;
   background: white;
   border-bottom-color: #63a63e;
+  padding: 7px 0;
+}
+.button-bookmark:hover {
+  border-color: #32425c;
+}
+.button-bookmark:active {
+  opacity: 0.3;
 }
 .button-sale {
   display: none;
@@ -820,16 +826,40 @@ background-color: #161d29;
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 .button-buy {
+  position: relative;
+  border: none;
+  padding: 10px 3px;
   font-size: 14px;
   line-height: 18px;
   background-color: #63a63e;
   text-align: center;
+  box-shadow: inset 0px -3px 0 0 #367315;
 }
 .button-buy:hover {
   background-color: #5fbb2d;
+  border-color: #5fbb2d;
 }
 .button-buy:active {
   background-color: #518534;
+  border-color: #518534;
+}
+.button-buy::after {
+  content: "";
+
+  position: absolute;
+
+  width: 15px;
+  height: 15px;
+
+  left: 12px;
+  top: 10px;
+
+  background-image: url("../img/cart-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.button-buy:hover::after {
+  background-image: url("../img/cart-icon(white).png");
 }
 .button-order {
   font-family: 'Cuprum', Arial, sans-serif;
