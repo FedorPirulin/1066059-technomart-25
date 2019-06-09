@@ -56,31 +56,55 @@ a {
 }
 .search {
   position: relative;
-  padding-left: 50px;
+  width: 270px;
 }
+/* .search-button::after {
+    content: "";
+
+    position: absolute;
+
+    left: 17px;
+    top: 12px;
+
+    width: 17px;
+    height: 17px;
+
+    background-image: url("../img/icon-search-white.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+  } */
 .input-search {
+  box-sizing: border-box;
   line-height: 18px;
-  width: 220px;
+  width: 270px;
   height: 42px;
   color: #ffffff;
   background-color: #293449;
   border: none;
-}
-.search::after{
-  content: "";
-
-  position: absolute;
-
-  left: 17px;
-
-  width: 17px;
-  height: 17px;
-
-  background-image: url("../img/icon-search-grey.svg");
-  background-position: 0 0;
+  padding-left: 49px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  background-image: url("../img/icon-search-white-op.svg");
+  background-position: 17px 50%;
   background-repeat: no-repeat;
-
-  opacity: 0.7;
+}
+.input-search:hover {
+  background-image: url("../img/icon-search-white.svg");
+}
+.input-search:focus, .input-search:active {
+  background-image: url("../img/icon-search-strawberry.svg");
+}
+.search-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  height: 0;
+  width: 0;
+  cursor: pointer;
 }
 .input-search::-ms-input-placeholder {
   color: #ffffff;
@@ -94,8 +118,8 @@ a {
 .input-search::placeholder {
   color: #ffffff;
 }
-.input-search:hover,
-.search:hover {
+.input-search:hover {
+  opacity: 1;
   background-color: #212a3a;
   color: #ffffff;
 }
@@ -159,7 +183,7 @@ a {
   opacity: 0.3;
 }
 .top-header-button:hover {
-background-color: #161d29;
+background-color: #212a3a;
 }
 .top-header-button:active {
   color:rgba(255, 255, 255, 0.6);
@@ -318,6 +342,7 @@ background-color: #161d29;
   background-image: url("../img/icon-logout.svg");
 }
 .user-login-link {
+  position: relative;
   margin-right: 10px;
   height: 20px;
   font-size: 21px;
@@ -327,6 +352,27 @@ background-color: #161d29;
   padding-bottom: 11px;
   padding-left: 48px;
   padding-right: 27px;
+}
+.user-login-link::after {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 17px;
+
+  top: 15px;
+  left: 14px;
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.user-login-link:hover:after {
+background-image: url("../img/icon-login-blue.svg");
+}
+.user-login-link:active:after {
+background-image: url("../img/icon-login.svg");
 }
 .user-registration {
   height: 20px;
