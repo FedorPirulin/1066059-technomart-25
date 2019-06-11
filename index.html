@@ -277,7 +277,7 @@
           </ul>
         </div>
         <div class="footer-top-down">
-            <p class="footer-top-address">  г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7(812) 555-05-55<p>
+            <p class="footer-top-address">  г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812) 555-05-55<p>
           <ul class="bottom-navigation-down">
             <li class="bottom-navigation-button-fix"><a href="specialoffer.html">Материалы</a></li>
             <li class="bottom-navigation-button"><a href="deliver.html">Техника</a></li>
@@ -330,21 +330,25 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная свзять</h2>
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-    <p class="feedback-item">
+      <div class="modal-wrapper">
+        <div class="modal-wrapper-half">
       <label class="feedback-titele" for="feedback-name">Ваше имя:</label>
       <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-    </p>
-    <p class="feedback-item">
+    </div>
+    <div class="modal-wrapper-half">
       <label class="feedback-titele" for="feedback-email">Ваш e-mail:</label>
       <input id="feedback-email" type="text" name="email" value="" placeholder="email@exapmle.com">
-    </p>
-    <p class="feedback-item">
+    </div>
+  </div>
+      <div class="modal-wrapper-textarea">
       <label class="feedback-titele" for="feedback-text">Текст письма:</label>
-      <input id="feedback-text" type="text" name="text" value="" placeholder="В свободной форме">
-    </p>
-    <button class="feedback-button" type="submit">Отправить</button>
+      <textarea id="feedback-text" name="text" placeholder="В свободной форме" resize="none"></textarea>
+      </div>
+      <div class="modal-bottom">
+      <button class="feedback-button" type="submit">ОТВПРАВИТЬ</button>
+    </div>
   </form>
-  <button class="modal-close" type="button">Закрыть</button>
+  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 </section>
   </body>
 </html>
