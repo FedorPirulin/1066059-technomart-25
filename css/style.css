@@ -55,23 +55,6 @@ a {
   position: relative;
   width: 270px;
 }
-/* .search-button::after {
-    content: "";
-
-    position: absolute;
-
-    left: 17px;
-    top: 12px;
-
-    width: 17px;
-    height: 17px;
-
-    background-image: url("../img/icon-search-white.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-
-    opacity: 0.3;
-  } */
 .input-search {
   box-sizing: border-box;
   line-height: 18px;
@@ -962,9 +945,21 @@ background-image: url("../img/icon-login.svg");
   line-height: 20px;
   color: #000000;
 }
-.postal-services- {
+.postal-services-item {
+  position: relative;
   margin-top: 19px;
+  padding-left: 35px;
 }
+.red-line {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
 .delivery-middle-container p {
   margin: 0;
 }
@@ -1337,4 +1332,12 @@ background-image: url("../img/icon-login.svg");
   background-position: 0 0;
 
   cursor: pointer;
+}
+.modal-map {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 940px;
+  height: 446px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
