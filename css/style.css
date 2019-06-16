@@ -49,7 +49,7 @@ a {
 
 .promo-block-item {
   position: relative;
-  width: 275px;
+  width: 277px;
   height: 73px;
   padding-left: 23px;
   padding-top: 26px;
@@ -203,9 +203,40 @@ a {
   align-items: center;
   justify-content: center;
 }
-.special-services {
-  width: 620px;
-  height: 266px;
+
+.promo-block-button:hover {
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-block-button:active {
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+.special-service {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 575px;
+  height: 218px;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+
+.service-dreli {
+  background-image: url(../img/dreli.jpg);
+}
+.service-perforatori {
+  background-image: url(../img/perforatori.jpg);
+}
+
+.special-service h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+
 }
 
 .header-top {
@@ -1460,10 +1491,14 @@ background-image: url(../img/icon-login.svg);
   text-decoration: underline;
 }
 
-.bottom-navigation-up a:active,
-.bottom-navigation-down a:active {
+.bottom-navigation-up a:active {
   text-decoration: none;
   color: rgba(241, 245, 247, 0.5);
+}
+
+.bottom-navigation-down a:active {
+  text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .footer-bottom-wrapper {
