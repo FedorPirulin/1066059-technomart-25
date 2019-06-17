@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-                                  <!-- Шапка сайта-->
     <header class="main-header">
       <h1 class="visually-hidden">Техномарт</h1>
-                                  <!-- Хедер Топ -->
+
     <div class="header-wrapper">
       <div class="header-top container">
         <a class="main-header-logo" href="index.html">
@@ -58,7 +57,7 @@
     </div>
   </div>
     </header>
-    <main class="container">
+    <main>
                                 <!-- Карточкики с услугами -->
       <section class="promo-block container">
         <h2 class="visually-hidden">Услуги</h2>
@@ -80,12 +79,11 @@
             </div>
             <a class="special-service-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
           </div>
-          <!--<div class="special-service service-perforatori">
-            <img class="perforatori-title" src="#" alt="Перфораторы">
+          <div class="special-service service-perforatori">
             <h3>ПЕРФОРАТОРЫ</h3>
             <p>Настоящие мужские игрушки</p>
             <a class="special-service-button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
-          </div>-->
+          </div>
         </div>
 
         <div class="promo-block-second-wrapper">
@@ -104,68 +102,69 @@
         </div>
         </section>
         <!-- Популярные товары -->
-        <section class="catalog">
-        <div class="catalog-header">
+        <section class="catalog-index container">
+        <div class="catalog-index-header">
           <h2 class="popular-thinks">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
           <a class="all-popular-items" href="catalog.html" target="_blank">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         </div>
-        <ul>
+        <ul class="catalog-index-list">
           <li class="item">
-              <h3 class="item-titele">Перфоратор BOSCH BFG 9000</h3>
               <p>
                 <img class="item-img" src="img/item-bfg9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
               </p>
+              <h3 class="item-titele">Перфоратор BOSCH BFG 9000</h3>
               <b class="old-price">32500 Р.</b>
               <b class="new-price">25500 Р.</b>
-              <div>
-                <a class="button-buy" href="#">Купить</a>
-                <a class="button-order" href="#">Закладки</a>
+              <div class="button-sale">
+                <a class="button-buy" href="#">КУПИТЬ</a>
+                <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
               </div>
           </li>
           <li class="item">
-              <h3 class="item-titele">Перфоратор BOSCH BFG 3000</h3>
               <p>
                 <img class="item-img" src="img/item-bfg3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
               </p>
+              <h3 class="item-titele">Перфоратор BOSCH BFG 3000</h3>
               <b class="old-price">22500 Р.</b>
               <b class="new-price">15500 Р.</b>
-              <div>
-                <a class="button-buy" href="#">Купить</a>
-                <a class="button-order" href="#">Закладки</a>
+              <div class="button-sale">
+                <a class="button-buy" href="#">КУПИТЬ</a>
+                <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
               </div>
           </li>
           <li class="item">
-              <h3 class="item-titele">Перфоратор BOSCH BFG 6000</h3>
               <p>
                 <img class="item-img" src="img/item-bfg6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
               </p>
+              <h3 class="item-titele">Перфоратор BOSCH BFG 6000</h3>
               <b class="old-price">30500 Р.</b>
               <b class="new-price">25500 Р.</b>
-              <div>
-                <a class="button-buy" href="#">Купить</a>
-                <a class="button-order" href="#">Закладки</a>
+              <div class="button-sale">
+                <a class="button-buy" href="#">КУПИТЬ</a>
+                <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
               </div>
           </li>
           <li class="item">
-            <h3 class="item-titele">Перфоратор BOSCH BFG 2000</h3>
             <p>
                 <img class="item-img" src="img/item-bfg2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
             </p>
+            <h3 class="item-titele">Перфоратор BOSCH BFG 2000</h3>
+            <b class="old-price hidden">hidden</b>
             <b class="new-price">12500 Р.</b>
-            <div>
-              <a class="button-buy" href="#">Купить</a>
-              <a class="button-order" href="#">Закладки</a>
+            <div class="button-sale">
+              <a class="button-buy" href="#">КУПИТЬ</a>
+              <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
             </div>
           </li>
         </ul>
       </section>
       <!-- Популярные производители -->
-      <section class="brands">
+      <section class="brands container">
         <header class="brands-header">
           <h2 class="popular-thinks">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-          <a class="all-brands">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+          <a class="all-brands" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
         </header>
-        <ul>
+        <ul class="brands-list">
           <li class="brand-card">
             <a class="brand-card-button" href="#">
               <img class="brand-img" src="img/bosch.jpg" alt="BOSCH" width="126" height="37">
@@ -209,7 +208,8 @@
         </ul>
       </section>
         <!-- Сервисы -->
-      <section class="services">
+    <div class="services-wrapper">
+      <section class="services container">
         <h3 class="services-titel">Сервисы</h3>
         <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-info">
@@ -237,6 +237,7 @@
           </ul>
         </div>
       </section>
+    </div>
       <!-- Доставка -->
       <div class="delivery container">
       <section class="delivery-info">
