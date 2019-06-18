@@ -1035,7 +1035,7 @@ background-image: url(../img/icon-login.svg);
 }
 
 .filter-titele {
-  font-style: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   color: #000000;
@@ -1232,7 +1232,7 @@ background-image: url(../img/icon-login.svg);
 }
 
 .pagination-item {
-  font-style: 'PT Sans', Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   display: flex;
@@ -1476,7 +1476,7 @@ background-image: url(../img/icon-login.svg);
 }
 
 .button-buy:hover::after {
-  background-image: url(../img/cart-icon(white).png);
+  background-image: url(../img/cart-icon-white.png);
 }
 
 .button-order {
