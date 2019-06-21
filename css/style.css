@@ -10,6 +10,11 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -563,7 +568,7 @@ background-color: #212a3a;
 
 .header-bottom {
   background-color: #f4f7f9;
-  height: 278px;
+  padding-bottom: 60px;
 }
 
 .fisrt-crumb {
@@ -583,7 +588,7 @@ background-color: #212a3a;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: italic;
   text-align: left;
-  width: 196px;
+  width: 197px;
   padding-left: 53px;
   margin: 0;
 }
@@ -649,7 +654,7 @@ background-color: #212a3a;
   line-height: 24px;
   color: #32425c;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .current-user-menu {
@@ -667,7 +672,7 @@ background-color: #212a3a;
   padding-right: 69px;
   padding-bottom: 11px;
   padding-left: 47px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .current-user-button::before {
@@ -793,7 +798,7 @@ background-image: url(../img/icon-login.svg);
   text-decoration: underline;
   padding-left: 17px;
   padding-right: 71px;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .user-menu-container::before {
@@ -832,7 +837,8 @@ background-image: url(../img/icon-login.svg);
   margin: 0;
   padding: 0 25px;
   display: flex;
-  height: 60px;
+  flex-wrap: wrap;
+  width: 890px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -848,7 +854,7 @@ background-image: url(../img/icon-login.svg);
   padding-right: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
-  display:block;
+  display: block;
 }
 
 .site-navigation-button a:hover {
@@ -1356,6 +1362,8 @@ background-image: url(../img/icon-login.svg);
 
 .item p {
   margin: 0;
+  width: 218px;
+  height: 170px;
 }
 
 .old-price {
@@ -1789,14 +1797,19 @@ background-image: url(../img/icon-login.svg);
 }
 
 .modal-feedback {
-  position: relative;
+  top: 240px;
+  left: 50%;
+
   display: flex;
   flex-direction: column;
   border-top: solid 7px #ee3643;
   width: 620px;
   height: 430px;
+  margin-left: -300px;
+  background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
 
+  display: none;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -1980,9 +1993,14 @@ background-image: url(../img/icon-login.svg);
 }
 
 .modal-map {
+  top: 25px;
+  left: 50%;
+
   margin: 0;
   padding: 0;
-  position: relative;
+  display: none;
+  margin-left: -470px;
+
   width: 940px;
   height: 446px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -2057,5 +2075,5 @@ background-image: url(../img/icon-login.svg);
 }
 
 .modal {
-  display: none;
+  position: fixed;
 }
