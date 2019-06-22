@@ -224,12 +224,12 @@ background-color: rgba(0, 0, 0, 0.3);
 .special-service {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.25);
-  width: 575px;
-  height: 218px;
-  padding-left: 25px;
+  width: 577px;
+  height: 243px;
+  padding-left: 23px;
   padding-right: 20px;
-  padding-top: 26px;
-  padding-bottom: 22px;
+  padding-top: 23px;
+  padding-bottom: 0px;
 }
 
 .service-dreli {
@@ -242,7 +242,7 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .special-service h3 {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   font-weight: bold;
@@ -253,10 +253,11 @@ background-color: rgba(0, 0, 0, 0.3);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  margin-left: 1px;
 }
 
 .special-service-button {
-  margin-top: 115px;
+  margin-top: 121px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -265,10 +266,11 @@ background-color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
-  width: 195px;
+  width: 189px;
   height: 10px;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 6px;
 }
 
 .special-service-button:hover {
@@ -284,10 +286,14 @@ background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
 }
 
+.brands {
+  padding-bottom: 65px;
+}
+
 .catalog-index-header,
 .brands-header {
   display: flex;
-  padding: 25px 24px 26px 30px;
+  padding: 26px 24px 25px 27px;
   align-items: center;
   background-color: #f9f5f0;
   margin-bottom: 20px;
@@ -300,6 +306,7 @@ background-color: rgba(0, 0, 0, 0.3);
 .catalog-index-header h2,
 .brands-header h2 {
   margin: 0;
+  font-weight: normal;
   color: #32425c;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -317,9 +324,9 @@ background-color: rgba(0, 0, 0, 0.3);
   line-height: 18px;
   background-color: #ee3643;
   width: 253px;
-  height: 10px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  height: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .all-brands {
@@ -614,7 +621,7 @@ background-color: #212a3a;
   justify-content: center;
   width: 152px;
   height: 15px;
-  border: solid 3px #000000;
+  border: solid 3px #ffffff;
   padding-left: 66px;
   padding-right: 46px;
   padding-top: 14px;
@@ -881,17 +888,18 @@ background-image: url(../img/icon-login.svg);
   color: #000000;
   display: flex;
   flex-direction: column;
-  padding-top: 68px;
+  padding-top: 66px;
   padding-bottom: 99px;
 }
 
 .services h3 {
+  font-weight: normal;
   margin: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 38px;
+  margin-bottom: 26px;
 }
 
 .services p {
@@ -899,18 +907,18 @@ background-image: url(../img/icon-login.svg);
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  width: 425px;
+  width: 415px;
 }
 
 .services-info {
   display: flex;
+  padding-top: 67px;
 }
 
 .services-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 74px;
 }
 
 .services-list-button {
@@ -942,7 +950,6 @@ background-image: url(../img/icon-login.svg);
   margin: 0;
   padding: 0;
   padding-left: 80px;
-  margin-top: 74px;
 }
 
 .services {
@@ -1292,7 +1299,7 @@ background-image: url(../img/icon-login.svg);
   text-align: center;
   display: inline-block;
   width: 218px;
-  height: 320px;
+  height: 316px;
   margin-bottom: 20px;
   margin-right: 20px;
   border: solid 1px #e5e5e5;
@@ -1362,10 +1369,12 @@ background-image: url(../img/icon-login.svg);
 }
 
 .item-titele {
+  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
+  font-weight: bold;
   padding: 0 25px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin-top: 9px;
+  margin-bottom: 11px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -1379,11 +1388,12 @@ background-image: url(../img/icon-login.svg);
 
 .old-price {
   display: block;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #999999;
   background-color: #ffffff;
   text-align: center;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 18px;
   text-decoration: line-through;
 }
 
@@ -1395,9 +1405,12 @@ background-image: url(../img/icon-login.svg);
   margin-bottom: 20px;
   padding: 10px 30px;
 
+  font-family: "PT Sans", Arial, sans-serif;
   color: white;
   background: #fff;
   border-radius: 3px;
+  font-size: 17px;
+  line-height: 18px;
   background-image: url(../img/item-button.svg);
   background-repeat: no-repeat;
 }
