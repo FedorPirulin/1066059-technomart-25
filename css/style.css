@@ -38,8 +38,8 @@ a {
 
 .promo-block {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 53px;
+  padding-top: 59px;
+  padding-bottom: 52px;
 }
 .promo-block-first-wrapper {
   display: flex;
@@ -55,9 +55,9 @@ a {
 .promo-block-item {
   color: #ffffff;
   position: relative;
-  width: 278px;
+  width: 277px;
   height: 75px;
-  padding-left: 22px;
+  padding-left: 23px;
   padding-top: 21px;
   padding-bottom: 27px
 }
@@ -293,7 +293,7 @@ background-color: rgba(0, 0, 0, 0.3);
 .catalog-index-header,
 .brands-header {
   display: flex;
-  padding: 26px 24px 25px 27px;
+  padding: 27px 24px 24px 27px;
   align-items: center;
   background-color: #f9f5f0;
   margin-bottom: 20px;
@@ -433,7 +433,7 @@ background-color: rgba(0, 0, 0, 0.3);
   background-color: #293449;
   border: none;
   padding-left: 48px;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 11px;
   padding-right: 21px;
   background-image: url(../img/icon-search-white-op.svg);
@@ -546,6 +546,10 @@ background-color: rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
 
   opacity: 0.3;
+}
+
+.basket-full {
+  background-color: #ee3643;
 }
 
 .top-header-button:hover {
@@ -685,18 +689,19 @@ background-color: #212a3a;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  padding-top: 14px;
-  padding-right: 69px;
+  padding-top: 13px;
+  padding-right: 67px;
   padding-bottom: 11px;
   padding-left: 47px;
-  margin-bottom: 0;
+  margin-bottom: 6px;
+  margin-left: auto;
 }
 
 .current-user-button::before {
   content: "";
 
   position: absolute;
-  top: 13px;
+  top: 15px;
   left: 13px;
   width: 20px;
   height: 18px;
@@ -775,13 +780,14 @@ background-image: url(../img/icon-login.svg);
 
 .user-registration {
   height: 20px;
+  width: 101px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 24px;
 }
 
 .user-login-link,
@@ -866,9 +872,9 @@ background-image: url(../img/icon-login.svg);
 }
 
 .site-navigation-button a {
-  padding-left: 32px;
+  padding-left: 31px;
   padding-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
   padding-right: 30px;
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
@@ -924,7 +930,7 @@ background-image: url(../img/icon-login.svg);
 .services-list-button {
   outline: none;
   width: 240px;
-  height: 61px;
+  height: 62px;
   box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
   background-color: #32425c;
   border: none;
@@ -967,7 +973,7 @@ background-image: url(../img/icon-login.svg);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 }
 
 .container-catalog {
@@ -1373,7 +1379,7 @@ background-image: url(../img/icon-login.svg);
   margin: 0;
   font-weight: bold;
   padding: 0 25px;
-  margin-top: 9px;
+  margin-top: 10px;
   margin-bottom: 11px;
   font-size: 18px;
   line-height: 20px;
@@ -1527,12 +1533,12 @@ background-image: url(../img/icon-login.svg);
 
 .delivery {
   display: flex;
-  padding-top: 82px;
+  padding-top: 81px;
   padding-bottom: 86px;
 }
 
 .delivery-info {
-  margin-right: 98px;
+  margin-right: 97px;
   display: flex;
   flex-direction: column;
 }
@@ -1545,9 +1551,11 @@ background-image: url(../img/icon-login.svg);
 
 .delivery-info-titele,
 .contacts-titele {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: normal;
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
+  margin-bottom: 26px;
   text-align: left;
   font-size: 30px;
   line-height: 30px;
@@ -1568,7 +1576,7 @@ background-image: url(../img/icon-login.svg);
 
 .postal-services-item {
   position: relative;
-  margin-top: 18px;
+  margin-top: 20px;
   padding-left: 35px;
 }
 
@@ -1588,7 +1596,7 @@ background-image: url(../img/icon-login.svg);
 
 .delivery-middle-container {
   height: 161px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .delivery-info-text,
@@ -1619,23 +1627,26 @@ background-image: url(../img/icon-login.svg);
 
 .about-company {
   width: 140px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
 }
 
 .map-button {
   padding-left: 63px;
-  padding-right: 59px;
+  padding-right: 55px;
 }
 
-.contacts-text,
 .delivery-info-text {
   width: 542px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
+}
+
+.contacts-text {
+  margin-bottom: 31px;
 }
 
 .map {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   display: block;
 }
 
@@ -1691,7 +1702,7 @@ background-image: url(../img/icon-login.svg);
 
 .footer-top-up {
   height: 68px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .footer-top-down {
@@ -1704,13 +1715,18 @@ background-image: url(../img/icon-login.svg);
 
 .bottom-navigation-button {
   margin-left: 60px;
+  margin-bottom: 6px;
 }
 
 .footer-top-address {
-  width: 322px;
+  width: 323px;
   color: #f1f5f7;
   padding: 0;
   margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 3px;
 }
 
 .bottom-navigation-up {
@@ -1765,8 +1781,8 @@ background-image: url(../img/icon-login.svg);
 .technomart {
   height: 42px;
   margin: 0;
-  padding-top: 4px;
-  margin-right: 158px;
+  padding-top: 2px;
+  margin-right: 161px;
 }
 
 .social-button {
@@ -1796,16 +1812,16 @@ background-image: url(../img/icon-login.svg);
   margin: 0;
   height: 42px;
   text-align: left;
-  margin-left: 119px;
-  padding-top: 5px;
+  margin-left: 118px;
+  padding-top: 2px;
 }
 
 .footer-feedback {
   margin: 0;
   text-align: left;
   height: 42px;
-  margin-left: 53px;
-  padding-top: 4px;
+  margin-left: 52px;
+  padding-top: 2px;
 }
 
 .feedback-link {
@@ -1997,7 +2013,7 @@ background-image: url(../img/icon-login.svg);
 
 .modal-close {
   padding: 0;
-  border: 0;
+  border: none;
 }
 
 .modal-close::before {
@@ -2029,6 +2045,7 @@ background-image: url(../img/icon-login.svg);
   width: 940px;
   height: 446px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 30;
 }
 
 .sorting-direction label {
@@ -2101,4 +2118,88 @@ background-image: url(../img/icon-login.svg);
 
 .modal {
   position: fixed;
+}
+
+.range-filter {
+  width: 220px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #f7f3ec;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 140px;
+}
+
+.price-controls label {
+  color: #000000;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls input {
+  width: 9px;
+  padding: 9px 40px 14px 46px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
+
+.max-price {
+  margin-left: 30px;
+}
+
+.modal-show {
+  display: block;
 }

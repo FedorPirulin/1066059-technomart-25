@@ -21,8 +21,8 @@
             <input class="input-search" type="search" name="search" placeholder="Поиск:">
             <button type="submit" class="search-button"><span class="visually-hidden">Поиск</span></button>
             </form>
-            <a class="top-header-button bookmark" href="#">Закладки</a>
-            <a class="top-header-button basket" href="#">Корзина</a>
+            <a class="top-header-button bookmark" href="#">Закладки: 0</a>
+            <a class="top-header-button basket basket-full" href="#">Корзина: 10</a>
             <a class="order-button" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -81,6 +81,18 @@
               <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                   <legend>ЦЕНА:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                      <label class="max-price"> - <input name="max-price" type="text" value="30000"></label>
+                    </div>c
                 </fieldset>
                 <fieldset>
 
