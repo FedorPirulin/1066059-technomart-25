@@ -990,10 +990,9 @@ background-image: url(../img/icon-login.svg);
   flex-wrap: wrap;
 
   list-style: none;
-  padding-top: 21px;
+  padding-top: 22px;
   padding-bottom: 28px;
   padding-left: 12px;
-}
 
 .crumb {
   margin-right: 41px;
@@ -1053,7 +1052,7 @@ background-image: url(../img/icon-login.svg);
   line-height: 30px;
   height: 23px;
   padding-top: 31px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
   padding-left: 28px;
   margin-bottom: 20px;
 }
@@ -1067,9 +1066,9 @@ background-image: url(../img/icon-login.svg);
   width: 51px;
   height: 28px;
   padding-left: 20px;
-  padding-top: 11px;
+  padding-top: 13px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding-right: 149px;
   font-weight: 100;
 }
@@ -1198,7 +1197,7 @@ background-image: url(../img/icon-login.svg);
 
 .sorting-wrapper {
   display: flex;
-  padding: 11px 17px 11px 19px;
+  padding: 9px 17px 11px 17px;
 
 }
 
@@ -1206,7 +1205,7 @@ background-image: url(../img/icon-login.svg);
   padding: 0;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
   color: #000000;
 }
@@ -1214,18 +1213,18 @@ background-image: url(../img/icon-login.svg);
 .sorting-list {
   margin: 0;
   padding: 0;
-  margin-left: 139px;
+  margin-left: 135px;
   display: flex;
   list-style: none;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-property {
-  margin-right: 60px;
+  margin-right: 67px;
 }
 .sorting-property label {
   cursor: pointer;
@@ -2056,7 +2055,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: -59px;
+  right: 11px;
 
   width: 11px;
   height: 10px;
@@ -2071,7 +2070,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: -59px;
+  right: 11px;
 
   width: 11px;
   height: 10px;
@@ -2086,7 +2085,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: -87px;
+  right: -22px;
 
   width: 11px;
   height: 10px;
@@ -2100,7 +2099,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: -87px;
+  right: -22px;
 
   width: 11px;
   height: 10px;
