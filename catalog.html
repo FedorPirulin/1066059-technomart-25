@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -180,7 +180,7 @@
                   <b class="old-price">22500 Р.</b>
                   <b class="new-price">15500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -193,7 +193,7 @@
                   <b class="old-price">30500 Р.</b>
                   <b class="new-price">25500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -207,7 +207,7 @@
                   <b class="old-price hidden">hidden</b>
                   <b class="new-price">12500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -220,7 +220,7 @@
                   <b class="old-price">22500 Р.</b>
                   <b class="new-price">15500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -234,7 +234,7 @@
                   <b class="old-price">30500 Р.</b>
                   <b class="new-price">25500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -247,7 +247,7 @@
                   <b class="old-price hidden">hidden</b>
                   <b class="new-price">12500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -261,7 +261,7 @@
                   <b class="old-price">22500 Р.</b>
                   <b class="new-price">15500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -274,7 +274,7 @@
                   <b class="old-price">30500 Р.</b>
                   <b class="new-price">25500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -287,7 +287,7 @@
                   <b class="old-price hidden">hidden</b>
                   <b class="new-price">12500 Р.</b>
                   <div class="button-sale">
-                    <a class="button-buy" href="#">КУПИТЬ</a>
+                    <a class="button-buy" href="#" onclick="return false">КУПИТЬ</a>
                     <a class="button-bookmark" href="#">В ЗАКЛАДКИ</a>
                   </div>
                 </li>
@@ -374,9 +374,23 @@
           <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
           <form class="modal-bottom" action="https://echo.htmlac0ademy.ru" method="post">
             <a class="buy-final-button button" href="#"> ОФОРМИТЬ ЗАКАЗ </a>
-            <input type="button" value="ПРОДОЛЖИТЬ ПОКУПКИ" class="continue-button button">
+            <button type="submit" class="continue-button button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
           </form>
         </section>
+        <script> //  ModalBuy
+          var buy = document.querySelector(".button-buy");
+          var popupBuy = document.querySelector(".modal-buy");
 
+          buy.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupBuy.classList.add("modal-show");
+            });
+
+          var close = popupBuy.querySelector(".modal-close");
+          close.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupBuy.classList.remove("modal-show");
+        });
+        </script>
       </body>
     </html>

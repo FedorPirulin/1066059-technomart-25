@@ -410,20 +410,24 @@
     descriptionDelivery.classList.add("services-show");
     descriptionWarranty.classList.remove("services-show");
     descriptionCredit.classList.remove("services-show");
+    descriptionDelivery.classList.remove("display-none");
 });
   serviceListWarranty.addEventListener("focus", function(evt) {
     evt.preventDefault();
+    descriptionDelivery.classList.add("display-none");
     descriptionWarranty.classList.add("services-show");
     descriptionDelivery.classList.remove("services-show");
     descriptionCredit.classList.remove("services-show");
 });
   serviceListCredit.addEventListener("focus", function(evt) {
     evt.preventDefault();
+    descriptionDelivery.classList.add("display-none");
     descriptionCredit.classList.add("services-show");
     descriptionWarranty.classList.remove("services-show");
     descriptionDelivery.classList.remove("services-show");
   });
 </script>
+
 <script>// Slider
   var sliderDotOne = document.querySelector(".dot-button-one");
   var sliderDotTwo = document.querySelector(".dot-button-two");
@@ -438,7 +442,6 @@
     slidePerforator.classList.remove("services-show");
     slideDrill.classList.remove("display-none");
   });
-
 
   sliderDotTwo.addEventListener("focus", function(evt) {
     evt.preventDefault();
