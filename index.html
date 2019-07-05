@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -15,7 +15,7 @@
     <div class="header-wrapper">
       <div class="header-top container">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo-tech.png" width="109" height="19" class="layer" alt="Логотим магазина Техномарт">
+          <img src="img/logo-technomart.svg" width="109" height="19" class="layer" alt="Логотим магазина Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <input class="input-search" type="search" name="search" placeholder="Поиск:" autocomplete="off">
@@ -254,7 +254,7 @@
       <!-- Доставка -->
       <div class="delivery container">
       <section class="delivery-info">
-        <h3 class="delivery-info-titlee">КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h3>
+        <h3 class="delivery-info-title">КОМПАНИЯ &laquo;ТЕХНОМАРТ&raquo;</h3>
         <p class="delivery-info-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <div class="delivery-middle-container">
         <p class="delivery-info-text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями.</p>
@@ -268,7 +268,7 @@
         </section>
         <!-- Контакты -->
         <section class="contacts">
-          <h3 class="contacts-titlee">КОНТАКТЫ</h3>
+          <h3 class="contacts-title">КОНТАКТЫ</h3>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="map" href="#">
             <img  src="img/map.jpg" width="300" height="158" alt="Офим компании по адресу ул. Большая Конюшенная 19/8, Сантк-Петербург">
@@ -380,6 +380,23 @@
     popup.classList.remove("modal-show");
 });
 </script>
+
+<script> //  ModalFeedback
+  var feedback = document.querySelector(".map-button");
+  var feedbackPopup = document.querySelector(".modal-feedback");
+
+  feedback.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    feedbackPopup.classList.add("modal-show");
+    });
+
+  var close = feedbackPopup.querySelector(".modal-close");
+  close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    feedbackPopup.classList.remove("modal-show");
+});
+</script>
+
 <script>// Services
   var serviceListDelivery = document.querySelector(".services-list-delivery");
   var serviceListWarranty = document.querySelector(".services-list-warranty");
@@ -421,6 +438,7 @@
     slidePerforator.classList.remove("services-show");
     slideDrill.classList.remove("display-none");
   });
+
 
   sliderDotTwo.addEventListener("focus", function(evt) {
     evt.preventDefault();
