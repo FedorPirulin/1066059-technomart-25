@@ -242,6 +242,8 @@ background-color: rgba(0, 0, 0, 0.3);
 .slider {
   height: 266px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
