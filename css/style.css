@@ -411,11 +411,13 @@ background-color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-footer-logo:hover {
   background-color: #ca2c37;
 }
 
-.main-header-logo:active {
+.main-header-logo:active,
+.main-footer-logo:active {
   background-color: #ba2732;
 }
 
@@ -990,10 +992,10 @@ background-image: url(../img/icon-login.svg);
   flex-wrap: wrap;
 
   list-style: none;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 28px;
-  padding-left: 12px;
-
+  padding-left: 14px;
+}
 .crumb {
   margin-right: 41px;
   position: relative;
@@ -1002,7 +1004,7 @@ background-image: url(../img/icon-login.svg);
 .crumb a, .current-crumb  {
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
 }
 
@@ -1052,23 +1054,23 @@ background-image: url(../img/icon-login.svg);
   line-height: 30px;
   height: 23px;
   padding-top: 31px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
   padding-left: 28px;
   margin-bottom: 20px;
 }
 
 .filter-titele {
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.38;
   color: #000000;
   background-color: #f7f3ec;
   width: 51px;
   height: 28px;
   padding-left: 20px;
-  padding-top: 13px;
+  padding-top: 10px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
   padding-right: 149px;
   font-weight: 100;
 }
@@ -1076,13 +1078,29 @@ background-image: url(../img/icon-login.svg);
 .filter fieldset {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  padding-bottom: 22px;
+  margin-bottom: 16px;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter fieldset:nth-child(2n) {
+  margin-bottom: 17px;
+  padding-bottom: 0;
+}
+
+.filter fieldset:nth-child(3n) {
+  border: none;
+  margin-bottom: 36px;
 }
 
 .filter legend {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .filter ul {
@@ -1091,7 +1109,7 @@ background-image: url(../img/icon-login.svg);
 }
 
 .filter-option {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   padding-left: 35px;
 }
 
@@ -1197,7 +1215,7 @@ background-image: url(../img/icon-login.svg);
 
 .sorting-wrapper {
   display: flex;
-  padding: 9px 17px 11px 17px;
+  padding: 9px 17px 11px 19px;
 
 }
 
@@ -1205,26 +1223,27 @@ background-image: url(../img/icon-login.svg);
   padding: 0;
   margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #000000;
+  font-weight: normal;
 }
 
 .sorting-list {
   margin: 0;
   padding: 0;
-  margin-left: 135px;
+  margin-left: 140px;
   display: flex;
   list-style: none;
 
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-property {
-  margin-right: 67px;
+  margin-right: 69px;
 }
 .sorting-property label {
   cursor: pointer;
@@ -1255,6 +1274,8 @@ background-image: url(../img/icon-login.svg);
 }
 
 .pagination-item {
+  text-decoration: none;
+  color: #000000;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1263,7 +1284,7 @@ background-image: url(../img/icon-login.svg);
   justify-content: center;
   border: solid 1px #e5e5e5;
   width: 38px;
-  margin-right: 10px;
+  margin-right: 8px;
   height: 38px;
   border-radius: 3px;
 }
@@ -1274,11 +1295,6 @@ background-image: url(../img/icon-login.svg);
 
 .pagination-item:active {
   border-color: #ee3643;
-}
-
-.pagination-item a {
-  text-decoration: none;
-  color: #000000;
 }
 
 .next-pagination-item {
@@ -1296,7 +1312,7 @@ background-image: url(../img/icon-login.svg);
 
 .item {
   text-align: center;
-  display: inline-block;
+  display: block;
   width: 218px;
   height: 316px;
   margin-bottom: 20px;
@@ -1332,10 +1348,6 @@ background-image: url(../img/icon-login.svg);
   visibility: hidden;
 }
 
-.filter fieldset {
-  border: none;
-}
-
 .filter legend {
   font-size: 17px;
   line-height: 30px;
@@ -1352,7 +1364,7 @@ background-image: url(../img/icon-login.svg);
 .filter-button {
   padding: 0;
   justify-content: center;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   border: solid 1px #e5e5e5;
@@ -1365,6 +1377,7 @@ background-image: url(../img/icon-login.svg);
 
 .catalog-list {
   list-style: none;
+  margin-bottom: 31px;
 }
 
 .item-titele {
@@ -1415,15 +1428,16 @@ background-image: url(../img/icon-login.svg);
 }
 
 .button-sale {
+  background-color: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
 
   width: 218px;
   height: 88px;
-  padding: 40px 0;
+  padding: 44px 0;
 
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   z-index: 10;
 }
 
@@ -1439,6 +1453,8 @@ background-image: url(../img/icon-login.svg);
   border-bottom-color: #367315;
   border-radius: 3px;
   font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -1473,8 +1489,6 @@ background-image: url(../img/icon-login.svg);
   position: relative;
   border: none;
   padding: 10px 3px;
-  font-size: 14px;
-  line-height: 18px;
   background-color: #63a63e;
   text-align: center;
   box-shadow: inset 0px -3px 0 0 #367315;
@@ -1655,12 +1669,15 @@ background-image: url(../img/icon-login.svg);
 }
 
 .somewords h2 {
-  margin-top: 0;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
+  margin-top: 0;
+  font-weight: normal;
 }
 
 .somewords p {
+  font-family: "PT Sans", Arial, sans-serif;
   margin-bottom: 0;
   font-size: 13px;
   line-height: 24px;
@@ -1867,7 +1884,7 @@ background-image: url(../img/icon-login.svg);
 }
 
 .modal-wrapper-half {
-  display: inline-block;
+  display: block;
 }
 
 .modal-wrapper label {
@@ -2055,7 +2072,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: 11px;
+  right: 14px;
 
   width: 11px;
   height: 10px;
@@ -2070,7 +2087,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: 11px;
+  right: 14px;
 
   width: 11px;
   height: 10px;
@@ -2085,7 +2102,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: -22px;
+  right: -18px;
 
   width: 11px;
   height: 10px;
@@ -2099,7 +2116,7 @@ background-image: url(../img/icon-login.svg);
   position: absolute;
 
   top: 4px;
-  right: -22px;
+  right: -18px;
 
   width: 11px;
   height: 10px;
@@ -2169,6 +2186,7 @@ background-image: url(../img/icon-login.svg);
 
 .price-controls label {
   color: #000000;
+  outline: none;
 }
 
 .price-controls {
