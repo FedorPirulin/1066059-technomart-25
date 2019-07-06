@@ -625,10 +625,6 @@ background-color: rgba(0, 0, 0, 0.3);
   opacity: 0.3;
 }
 
-.basket-full {
-  background-color: #ee3643;
-}
-
 .top-header-button:hover {
 background-color: #212a3a;
 }
@@ -1493,7 +1489,7 @@ background-image: url(../img/icon-login.svg);
 .pagination-item {
   text-decoration: none;
   color: #000000;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   display: -webkit-box;
@@ -1528,6 +1524,7 @@ background-image: url(../img/icon-login.svg);
 
 .pagination-item-current {
   background-color: #ee3643;
+  color: #ffffff;
 }
 
 .catalog-list .item:nth-child(3n) {
@@ -2259,6 +2256,11 @@ background-image: url(../img/icon-login.svg);
 .modal-wrapper-textarea textarea:focus {
   border-color: #ee3643;
 }
+
+.iframe-map {
+  border: none;
+}
+
 .feedback-button {
   color: #ffffff;
   padding: 0;
@@ -2665,4 +2667,14 @@ background-image: url(../img/icon-login.svg);
 .dot-button-one:focus:before,
 .dot-button-two:focus:after {
   background-color: #ee3643;
+}
+
+.basket-full {
+  background-color: #ee3643;
+}
+.basket-full:hover {
+  background-color: #ca2c37;
+}
+.basket-full:active {
+  background-color: #ba2732;
 }
