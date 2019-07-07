@@ -471,6 +471,7 @@ background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header-logo {
+  position: relative;
   background-color: #ee3643;
   width: 109px;
   height: 18px;
@@ -1102,14 +1103,14 @@ background-image: url(../img/icon-login.svg);
 }
 
 .block-delivery {
-  height: 256px;
+  height: 100%;
   background-image: url(../img/delivery.png);
   background-repeat: no-repeat;
   background-position: 100% 26px;
 }
 
 .block-warranty {
-  height: 283px;
+  height: 100%;
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -1117,7 +1118,7 @@ background-image: url(../img/icon-login.svg);
 }
 
 .block-credit {
-  height: 283px;
+  height: 100%;
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -2175,7 +2176,7 @@ background-image: url(../img/icon-login.svg);
 .feedback-form {
   padding: 0;
   margin: 0;
-  height: 430px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2314,7 +2315,7 @@ background-image: url(../img/icon-login.svg);
           justify-content: center;
   font-size: 30px;
   line-height: 30px;
-  padding: 75px 125px 68px 179px;
+  padding: 75px 0 68px 179px;
 }
 
 .modal-buy-title::before {
@@ -2417,6 +2418,7 @@ background-image: url(../img/icon-login.svg);
           box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   z-index: 30;
 
+  background-color: #ffffff;
   background-image: url(../img/bigmap.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
