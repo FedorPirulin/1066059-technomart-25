@@ -1,4 +1,4 @@
-//  Map
+ Map
 var map = document.querySelector(".map");
 var popup = document.querySelector(".modal-map");
 var feedback = document.querySelector(".map-button");
@@ -15,7 +15,7 @@ var sliderLeft = document.querySelector(".left-triangle");
 var sliderRight = document.querySelector(".right-triangle");
 var slideDrill = document.querySelector(".service-drill");
 var slidePerforator = document.querySelector(".service-perforators");
-var login = feedbackPopup.querySelector("[name=login]");
+
 
 map.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -31,7 +31,6 @@ close.addEventListener("click", function(evt) {
 feedback.addEventListener("click", function(evt) {
     evt.preventDefault();
     feedbackPopup.classList.add("modal-show");
-    login.focus();
 });
 var close = feedbackPopup.querySelector(".modal-close");
 close.addEventListener("click", function(evt) {
@@ -77,10 +76,10 @@ sliderDotTwo.addEventListener("focus", function(evt) {
 });
 
 //  ModalBuy
-var catalog = document.querySelector(".catalog-list");
-var buy = catalog.querySelectorAll(".button-buy");
+
+var buyButton = document.querySelector(".button-buy");
 var popupBuy = document.querySelector(".modal-buy");
-buy.addEventListener("click", function(evt) {
+buyButton.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupBuy.classList.add("modal-show");
 });
